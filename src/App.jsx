@@ -4,7 +4,10 @@ export function App() {
 
   return (
     <>
-      App
+      <div className='card'>
+        <h2>Gekko</h2>
+        <img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/fullportrait.png" alt="Gekko" />
+      </div>
     </>
   )
 }
