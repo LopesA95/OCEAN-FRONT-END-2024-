@@ -7,6 +7,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	margin-top: 20px;
 
 	transition: all 0.15s ease-in-out;
 
@@ -19,6 +20,8 @@
 		text-align: center;
     font-size: 32px;
 		font-family: sans-serif;
+		margin-top: 10px;
+		margin-bottom: 8px;
 	}
 
 	img {
@@ -26,9 +29,26 @@
 		border-radius: 16px;
   }
 
+	p {
+		display: flex;
+		padding: 6px;
+		border-radius: 8px;
+		width: 120px;
+		text-align: center;
+		background: #ccc;
+		justify-content: center;
+		align-items: center;
+	}
+
 	&:hover{
 	box-shadow: 3px 3px #000;
 	translate: -3px -3px;
-	rotate: 1deg;
 	}
+
+	.tags{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
+	}
+
 }
