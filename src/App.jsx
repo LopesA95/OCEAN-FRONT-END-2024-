@@ -5,7 +5,10 @@ export function App() {
 
   return (
     <>
-      <Card />
+      <div className='cards'>
+        <Card />
+        <Card />
+      </div>
     </>
   )
 }
