@@ -1,54 +1,43 @@
-
 .card {
-	border: 2px solid #000;
-	border-radius: 16px;
-	width: 330px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin-top: 20px;
+    border: 1px solid black;
+    padding: 16px;
+    border-radius: 16px;
+    width: 330px;
+    text-align: center;
+    background: #f0f0f0;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+}
 
-	transition: all 0.15s ease-in-out;
+.card:hover {
+    box-shadow: 3px 3px black;
+    translate: -3px -3px;
+}
 
-	background: #f0f0f0;
-	color: #000;
-
-	cursor: pointer;
-
-	h2{
-		text-align: center;
+.card h2 {
     font-size: 32px;
-		font-family: sans-serif;
-		margin-top: 10px;
-		margin-bottom: 8px;
-	}
+    font-family: sans-serif;
+    border-left: 6px solid #A9D3E9;
+}
 
-	img {
-    width: 320px;
-		border-radius: 16px;
-  }
+.card .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 16px;
+}
 
-	p {
-		display: flex;
-		padding: 6px;
-		border-radius: 8px;
-		width: 120px;
-		text-align: center;
-		background: #ccc;
-		justify-content: center;
-		align-items: center;
-	}
+.card .tags div {
+    background: white;
+    color: black;
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
 
-	&:hover{
-	box-shadow: 3px 3px #000;
-	translate: -3px -3px;
-	}
-
-	.tags{
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-gap: 10px;
-	}
-
+.card img {
+    border-radius: 16px;
 }
